@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <title>Video Game</title>
+        <description>A consolidation of multiple forms of media or elements such as programming, animation, 3D modelling etc.</description>
+        <date>April 5, 2026</date>
+    </project>
+
+    <project>
+        <title>Car Model</title>
+        <description>3D replica of an object with complex polygons and curves within its mesh.</description>
+        <date>March 24, 2024</date>
+    </project>
+
+    <project>
+        <title>Blender Donut</title>
+        <description>Introductory project which showcases 3D modeling, UV wrapping, lighting, set design</description>
+        <date>January 7, 2024</date>
+    </project>
+</projects>
