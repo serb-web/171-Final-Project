@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -23,7 +27,27 @@ footer {
     text-align: center;
     padding: 50px;
     background-color: #2e6f40;
-	color: #FFFFFF;
+    color: #FFFFFF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 15px;
+    background-color: #eeeeee;
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color: #2e6f40;
+    text-decoration: underline;
 }
 
 main {
@@ -40,8 +64,7 @@ section {
     display: flex;
     align-items: flex-start;
     gap: 50px;
-	
-	border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
     padding-bottom: 50px;
     margin-bottom: 75px;
 }
@@ -51,7 +74,6 @@ section {
     max-width: 300px;
     height: auto;
     border-radius: 10px;
-	
 }
 
 .about {
@@ -139,15 +161,26 @@ footer ul {
         display: inline-block;
         text-align: left;
     }
-	
+
     .portfolio {
         flex-direction: column;
         align-items: center;
         gap: 20px;
         text-align: center;
     }
-	.donut,
+    .donut,
     .car {
         width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        gap: 15px;
+        flex-wrap: wrap;
+        padding: 15px 10px;
+    }
+    .navbar a {
+        font-size: 14px;
     }
 }
