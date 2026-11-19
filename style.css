@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Gill Sans MT", sans-serif;
+}
+
+header,
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #2e6f40;
+	color: #FFFFFF;
+}
+
+main {
+    margin: 0 150px;
+    padding: 0 100px;
+    border: 1px solid #dddddd;
+}
+
+section {
+    margin: 75px 0;
+}
+
+.profile {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+	
+	border-bottom: 1px solid #dddddd;
+    padding-bottom: 50px;
+    margin-bottom: 75px;
+}
+
+.profile img {
+    width: 25%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+	
+}
+
+.about {
+    width: 45%;
+}
+
+.interests {
+    width: 30%;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+video {
+    display: block;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+}
+
+.donut,
+.car {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.donut img,
+.car img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+@media (max-width: 1080px) {
+
+    main {
+        margin: 0 20px;
+        padding: 20px;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .profile img {
+        width: 200px;
+        max-width: 100%;
+    }
+
+    .about,
+    .interests {
+        width: 100%;
+    }
+
+    .interests ul {
+        display: inline-block;
+        text-align: left;
+    }
+	
+    .portfolio {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+	.donut,
+    .car {
+        width: 100%;
+    }
+}
