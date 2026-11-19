@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 * {
@@ -12,7 +13,7 @@ body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
+    background-color: #FFFFFF;
     color: #333;
 }
 
@@ -36,7 +37,9 @@ footer {
     align-items: center;
     gap: 40px;
     padding: 15px;
-    background-color: #eeeeee;
+    background-color: #f8f9fa;
+	border-bottom: 1px solid #dddddd;
+	border-top: 1px solid #dddddd;
 }
 
 .navbar a {
@@ -53,7 +56,6 @@ footer {
 main {
     margin: 0 150px;
     padding: 0 100px;
-    border: 1px solid #dddddd;
 }
 
 section {
@@ -168,6 +170,7 @@ footer ul {
         gap: 20px;
         text-align: center;
     }
+
     .donut,
     .car {
         width: 100%;
@@ -175,11 +178,13 @@ footer ul {
 }
 
 @media (max-width: 600px) {
+
     .navbar {
         gap: 15px;
         flex-wrap: wrap;
         padding: 15px 10px;
     }
+
     .navbar a {
         font-size: 14px;
     }
